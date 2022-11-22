@@ -1,0 +1,32 @@
+pipeline{
+	agent any
+	stages{
+		stage('one'){
+			steps{
+				echo "Hi, welcome to pipeline demo"
+			}
+		}
+		stage('two'){
+			steps{
+				echo "Hi, Welcome to stage two"
+			}
+		}
+		stage('three'){
+			steps{
+				echo "welcome to step three........"
+				
+			}
+		}
+		stage('four'){
+			steps{
+				echo "Hi, Welcome to stage four"
+			}
+		}
+		stage('five'){
+			steps{
+				echo "path of java home:  ${env.JAVA_HOME}"
+				echo "path of maven: ${env.MAVEN_HOME} "
+			}
+		}
+	}
+}
